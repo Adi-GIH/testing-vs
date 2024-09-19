@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ <id value="ValueSet-encounter-v1-diagnosticcertainty-R4"/>
+ <meta>
+  <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+ </meta>
+ <text>
+  <status value="generated"/>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+   <p> Value set Diagnostic certainty. The level of confidence in the identification of the diagnosis.</p>
+   <p> Developed by: openEHR community</p>
+   <p> Generated with LinkEHR</p>
+   <p> This value set includes codes from archetype openEHR-EHR-COMPOSITION.encounter.v1 internal terminology</p>
+   <ul>
+    <li>at0074: Suspected</li>
+    <li>at0075: Probable</li>
+    <li>at0076: Confirmed</li>
+   </ul>
+  </div>
+ </text>
+ <url value="http://linkehr.com/fhir/ValueSet-encounter-v1-diagnosticcertainty-R4"/>
+ <version value="20240918"/>
+ <name value="Diagnostic certainty"/>
+ <status value="active"/>
+ <experimental value="false"/>
+ <publisher value="openEHR"/>
+ <description value="The level of confidence in the identification of the diagnosis."/>
+ <compose>
+  <include>
+   <system value="http://openehr.org/ckm/archetypes/openEHR-EHR-EVALUATION.problem_diagnosis.v1"/>
+   <concept>
+    <code value="at0074"/>
+    <display value="Suspected"/>
+   </concept>
+   <concept>
+    <code value="at0075"/>
+    <display value="Probable"/>
+   </concept>
+   <concept>
+    <code value="at0076"/>
+    <display value="Confirmed"/>
+   </concept>
+  </include>
+ </compose>
+</ValueSet>

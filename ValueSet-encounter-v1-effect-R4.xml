@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ <id value="ValueSet-encounter-v1-effect-R4"/>
+ <meta>
+  <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+ </meta>
+ <text>
+  <status value="generated"/>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+   <p> Value set Effect. Perceived effect of the modifying factor on the symptom or sign.</p>
+   <p> Developed by: openEHR community</p>
+   <p> Generated with LinkEHR</p>
+   <p> This value set includes codes from archetype openEHR-EHR-COMPOSITION.encounter.v1 internal terminology</p>
+   <ul>
+    <li>at0159: Relieves</li>
+    <li>at0156: No effect</li>
+    <li>at0158: Worsens</li>
+   </ul>
+  </div>
+ </text>
+ <url value="http://linkehr.com/fhir/ValueSet-encounter-v1-effect-R4"/>
+ <version value="20240918"/>
+ <name value="Effect"/>
+ <status value="active"/>
+ <experimental value="false"/>
+ <publisher value="openEHR"/>
+ <description value="Perceived effect of the modifying factor on the symptom or sign."/>
+ <compose>
+  <include>
+   <system value="http://openehr.org/ckm/archetypes/openEHR-EHR-CLUSTER.symptom_sign.v1"/>
+   <concept>
+    <code value="at0159"/>
+    <display value="Relieves"/>
+   </concept>
+   <concept>
+    <code value="at0156"/>
+    <display value="No effect"/>
+   </concept>
+   <concept>
+    <code value="at0158"/>
+    <display value="Worsens"/>
+   </concept>
+  </include>
+ </compose>
+</ValueSet>

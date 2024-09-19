@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ <id value="ValueSet-encounter-v1-progression-R4"/>
+ <meta>
+  <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+ </meta>
+ <text>
+  <status value="generated"/>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+   <p> Value set Progression. Description progression of the symptom or sign at the time of reporting.</p>
+   <p> Developed by: openEHR community</p>
+   <p> Generated with LinkEHR</p>
+   <p> This value set includes codes from archetype openEHR-EHR-COMPOSITION.encounter.v1 internal terminology</p>
+   <ul>
+    <li>at0183: Worsening</li>
+    <li>at0182: Unchanged</li>
+    <li>at0181: Improving</li>
+    <li>at0184: Resolved</li>
+   </ul>
+  </div>
+ </text>
+ <url value="http://linkehr.com/fhir/ValueSet-encounter-v1-progression-R4"/>
+ <version value="20240918"/>
+ <name value="Progression"/>
+ <status value="active"/>
+ <experimental value="false"/>
+ <publisher value="openEHR"/>
+ <description value="Description progression of the symptom or sign at the time of reporting."/>
+ <compose>
+  <include>
+   <system value="http://openehr.org/ckm/archetypes/openEHR-EHR-CLUSTER.symptom_sign.v1"/>
+   <concept>
+    <code value="at0183"/>
+    <display value="Worsening"/>
+   </concept>
+   <concept>
+    <code value="at0182"/>
+    <display value="Unchanged"/>
+   </concept>
+   <concept>
+    <code value="at0181"/>
+    <display value="Improving"/>
+   </concept>
+   <concept>
+    <code value="at0184"/>
+    <display value="Resolved"/>
+   </concept>
+  </include>
+ </compose>
+</ValueSet>
